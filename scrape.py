@@ -30,3 +30,6 @@ salaries = salary_pattern.findall(content)
 salaries = ['$876,001', '$543,903', '$2453,896']
 # Convert salaries to numbers in a list comprehension 
 [int(''.join(s[1:].split(','))) for s in salaries]
+
+# Make a horizontal bar chart
+df.plot(kind='barh', x = 'President', y = 'salary')
